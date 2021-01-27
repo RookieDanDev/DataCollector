@@ -1,0 +1,10 @@
+validateURL: https://www.nasdaq.com/
+templateURL: https://www.nasdaq.com/market-activity/stocks/%s/real-time
+Target: price
+xpath:
+  current_price: "//span[@class='symbol-page-header__pricing-price']"
+  price_change_amount: "//span[@class='symbol-page-header__pricing-change']"
+  price_change_percent: "//span[@class='symbol-page-header__pricing-percent']"
+selenium:
+  use_selenium: true
+  headless: false
